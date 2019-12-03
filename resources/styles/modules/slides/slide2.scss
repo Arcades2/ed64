@@ -1,0 +1,86 @@
+#section2 {
+  @include until($widescreen) {
+    background-position: 0 -70px;
+  }
+  z-index: 5;
+  background-image: url('../img/slide2-background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .slidebackground-up {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 9%;
+    background-image: url('../img/slidebackground_up.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .title {
+    @include until($tablet) {
+      position: static;
+      h1 {
+        @include until($tablet) {
+          padding-top: 50px;
+        }
+        text-align: center;
+      }
+      .underline {
+        display: none;
+      }
+    }
+    position: absolute;
+    top: 20%;
+    left: 5%;
+  }
+
+  #scene {
+    height: 100%;
+    @include until($tablet) {
+      div.slide2-content {
+        background: transparent;
+        position: static !important;
+        max-width: unset;
+        height: unset;
+      }
+      .slide2-image {
+        display: none !important;
+      }
+    }
+    .slide2-content {
+      @include until($desktop) {
+        left: 5% !important;
+        max-width: 60%;
+      }
+      display: flex !important;
+      flex-direction: column;
+      justify-content: center;
+      position: absolute !important;
+      top: 33% !important;
+      left: 15% !important;
+      height: 55vh;
+      background-color: white;
+      padding: 50px;
+      max-width: 41%;
+    }
+
+    .slide2-image {
+      @include until($desktop) {
+        height: 50vw;
+        top: 10% !important;
+      }
+      z-index: -10;
+      position: absolute !important;
+      left: 50% !important;
+      top: 10% !important;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 50%;
+      height: 65vh;
+    }
+  }
+}

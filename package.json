@@ -1,0 +1,28 @@
+{
+    "private": true,
+    "scripts": {
+        "build": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "start": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "dependencies": {
+        "bulma": "^0.7.4",
+        "cross-env": "^5.2.0",
+        "dotenv": "^8.0.0",
+        "fullpage.js": "^3.0.5",
+        "laravel-mix": "^4.0.14",
+        "parallax-js": "^3.1.0"
+    },
+    "browserslist": [
+        ">0.25%",
+        "not ie 11",
+        "not op_mini all"
+    ],
+    "devDependencies": {
+        "browser-sync": "^2.26.5",
+        "browser-sync-webpack-plugin": "^2.0.1",
+        "resolve-url-loader": "^2.3.1",
+        "sass": "^1.19.0",
+        "sass-loader": "^7.1.0",
+        "vue-template-compiler": "^2.6.10"
+    }
+}

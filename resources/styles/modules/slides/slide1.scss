@@ -1,0 +1,110 @@
+#section1 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.company {
+  @include from($widescreen) {
+    top: 40%;
+  }
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 80%;
+  .name {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @include from($tablet) {
+      flex-direction: row;
+    }
+    img {
+      @include from($tablet) {
+        margin-right: 25px;
+      }
+      border-radius: 50%;
+    }
+    h1 {
+      @include from($tablet) {
+        font-size: 3rem;
+      }
+      flex-shrink: 0;
+      margin-top: 10px;
+      font-size: 1.5rem;
+      color: black;
+      font-weight: bold;
+    }
+  }
+  .slogan {
+    @include from($tablet) {
+      font-size: 2.5rem;
+    }
+    color: $red;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .activities {
+    color: white;
+    p {
+      @include from($tablet) {
+        font-size: 1.5rem;
+      }
+      font-size: 1.25rem;
+      text-align: center;
+    }
+  }
+}
+
+.nav-buttons {
+  @include until($tablet) {
+    display: none;
+  }
+  @include from($widescreen) {
+    bottom: 20%;
+  }
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  z-index: 10;
+  .nav-button {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    &:hover .border {
+      transform: rotate(360deg);
+    }
+    img {
+      position: absolute;
+      &.border {
+        transition: transform 1.3s cubic-bezier(0.62, 0.005, 0, 1.005);
+        top: 0;
+        left: 0;
+      }
+      &.button-img {
+        top: 25px;
+        left: 25px;
+      }
+    }
+  }
+}
+
+.slidebackground-down {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 28.58%;
+  background-image: url('../img/slidebackground_down.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

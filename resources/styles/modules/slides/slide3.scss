@@ -1,0 +1,115 @@
+#section3 {
+  .columns {
+    @include until($widescreen) {
+      flex-direction: column;
+    }
+    margin: 0;
+    .column {
+      padding: 0;
+      transition: all 0.5s ease;
+      opacity: 0;
+      &.centered {
+        top: 0;
+        opacity: 1;
+      }
+    }
+    .overlay {
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+      &.black {
+        background-color: black;
+        @include until($tablet) {
+          display: none;
+        }
+      }
+      &.white {
+        background-color: white;
+      }
+    }
+    .col1 {
+      @include until($tablet) {
+        background-image: unset !important;
+      }
+      @include from($tablet) {
+        height: 50vh;
+      }
+      @include from($widescreen) {
+        height: 100vh;
+      }
+      height: 20vh;
+      position: relative;
+      top: calc(-100% - 80px);
+      h2 {
+        @include from($tablet) {
+          font-size: 2rem;
+          color: white;
+        }
+        color: black;
+        font-size: 1.5rem;
+        // color: white;
+      }
+    }
+    .col2 {
+      display: flex;
+      flex-direction: column;
+      height: 80vh;
+      @include from($tablet) {
+        height: 50vh;
+        flex-direction: row;
+      }
+      @include from($widescreen) {
+        height: 100vh;
+        flex-direction: column;
+        position: relative;
+        top: 100%;
+      }
+      .services {
+        transition: all 0.4s ease-in-out;
+        position: relative;
+        @include from($widescreen) {
+          left: 0 !important;
+          right: 0 !important;
+        }
+        &.menuiserie {
+          left: -100%;
+        }
+        &.amenagement {
+          left: 100%;
+        }
+        &.centered {
+          left: 0;
+        }
+        position: relative;
+        flex-grow: 1;
+        a {
+          color: black;
+        }
+        .square-underline {
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-between;
+          width: 50px;
+          .square {
+            background-color: $red;
+            width: 10px;
+            height: 10px;
+          }
+        }
+      }
+    }
+    .service-title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3rem;
+      padding-bottom: 10px;
+    }
+    .image-background {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}

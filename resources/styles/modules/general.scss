@@ -1,0 +1,28 @@
+body {
+  background-color: $background;
+}
+.section {
+  background-color: $background;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  .container {
+    height: 100%;
+  }
+}
+
+.full-height {
+  height: 100%;
+}
+
+.underline {
+  transition: all 0.4s ease;
+  transition-delay: 0.5s;
+  height: 8px;
+  background-color: $red;
+  width: 0%;
+  margin: 15px 0 0 25px;
+  &.extended {
+    width: 125%;
+  }
+}
