@@ -12929,6 +12929,7 @@ header .navbar .navbar-menu .navbar-end .socials a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #section5 .background {
