@@ -22,6 +22,7 @@
   .title {
     @include until($tablet) {
       position: static;
+      margin-top: 35px;
       h1 {
         @include until($tablet) {
           padding-top: 50px;
@@ -54,6 +55,7 @@
       @include until($desktop) {
         left: 5% !important;
         max-width: 60%;
+        padding: 25px;
       }
       display: flex !important;
       flex-direction: column;

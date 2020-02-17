@@ -85,6 +85,7 @@
     img {
       position: absolute;
       &.border {
+        border-style: none !important;
         transition: transform 1.3s cubic-bezier(0.62, 0.005, 0, 1.005);
         top: 0;
         left: 0;

@@ -35,12 +35,23 @@
       id="section5"
       data-anchor="testimonials"
       class="section"
-    >Section 5</div>
+    >
+    <?php include 'slides/slide5.php' ?>
+    </div>
     <div
       id="section6"
       data-anchor="contact"
-      class="section"
-    >Section 6</div>
+      class="section fp-auto-height-responsive"
+    >
+    <?php include 'slides/slide6.php' ?>
+    </div>
+    <div
+      id="section7"
+      data-anchor="footer"
+      class="section fp-auto-height"
+    >
+    <?php include 'slides/slide7.php' ?>
+    </div>
   </div>
 </main>
 

@@ -1,6 +1,13 @@
+import $ from 'jquery';
+import 'fullpage.js/vendors/scrolloverflow.min.js';
 import fullpage from 'fullpage.js';
 import 'fullpage.js/dist/fullpage.css';
 import Parallax from 'parallax-js';
+import 'bootstrap/dist/js/bootstrap.min.js';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'slick-carousel';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 // navbar responsive
 document.addEventListener('DOMContentLoaded', () => {
@@ -36,9 +43,12 @@ const iFullPage = new fullpage('#fullpage', {
     'testimonials',
     'contact',
   ],
+  slideSelector: '.fpslide',
   verticalCentered: false,
+  // scrollOverflow: true,
   responsiveWidth: 768,
-  normalScrollElements: '.masonry-wrapper',
+  css3: false,
+  normalScrollElements: '.masonry-wrapper, .lightbox',
   // paddingTop: '80px',
   onLeave: (origin, destination, direction) => {
     if (origin.index === 0 || destination.index === 0) {
@@ -85,7 +95,26 @@ const iFullPage = new fullpage('#fullpage', {
       const underline = document.querySelector('#section4 .underline');
       underline.classList.add('extended');
     }
+    if (destination.index === 4) {
+      const underlines = document.querySelectorAll('#section5 .underline');
+      underlines.forEach(el => el.classList.add('extended'));
+    }
+    if (destination.index === 5) {
+      const underlines = document.querySelectorAll('#section6 .underline');
+      underlines.forEach(el => el.classList.add('extended'));
+    }
   },
+  onSlideLeave: (section, origin, destination, direction) => {
+    console.log({ section, origin, destination, direction});
+    if (section.index === 2) {
+      if (origin.index === 1) {
+        section.item.classList.add('auto-height');
+      }
+      if (destination.index === 1) {
+        section.item.classList.remove('auto-height');
+      }
+    }
+  }
 });
 
 // Parallax
@@ -94,4 +123,13 @@ const scene = document.getElementById('scene');
 const iParallax = new Parallax(scene, {
   scalarX: 5,
   scalarY: 5,
+});
+
+$('.partners-list').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  variableWidth: true,
+  arrows: false,
+  swipeToSlide: true,
 });

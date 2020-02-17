@@ -4,7 +4,7 @@ $page = get_post(13);
 ?>
 <div class="container is-fluid">
   <div class="title">
-    <h1><?php echo $page->post_title ?></h1>
+    <h2><?php echo $page->post_title ?></h2>
     <div class="underline"></div>
   </div>
   <div id="scene">

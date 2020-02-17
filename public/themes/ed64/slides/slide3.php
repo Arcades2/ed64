@@ -1,4 +1,7 @@
-<div class="columns full-height">
+<div class="fpslide auto-height" data-anchor="menuiserie">
+  <?php include 'slide3a.php' ?>
+</div>
+<div class="columns full-height fpslide active">
   <div
     style="background-image: url('<?php echo get_field('image_service', 28)['sizes']['medium_large'] ?>')"
     class="column col1 image-background">
@@ -16,7 +19,7 @@
       <div class="overlay white"></div>
       <div class="service-title">
         <h2>
-          <a href="#">Menuiserie</a>
+          <a href="#services/menuiserie">Menuiserie</a>
         </h2>
         <div class="square-underline">
          <div class="square"></div> 
@@ -31,7 +34,7 @@
       <div class="overlay white"></div>
       <div class="service-title">
         <h2>
-          <a href="#">Aménagement</a>
+          <a href="#services/amenagement">Aménagement</a>
         </h2>
         <div class="square-underline">
          <div class="square"></div> 
@@ -41,4 +44,7 @@
       </div>
     </div>
   </div>
+</div>
+<div class="fpslide auto-height" data-anchor="amenagement">
+  <?php include 'slide3b.php'; ?>
 </div>

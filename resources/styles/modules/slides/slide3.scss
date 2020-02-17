@@ -1,8 +1,11 @@
 #section3 {
+  .fp-next {
+    right: 50px;
+  }
   .columns {
-    @include until($widescreen) {
+    // @include until($widescreen) {
       flex-direction: column;
-    }
+    // }
     margin: 0;
     .column {
       padding: 0;
@@ -34,9 +37,9 @@
       @include from($tablet) {
         height: 50vh;
       }
-      @include from($widescreen) {
-        height: 100vh;
-      }
+      // @include from($widescreen) {
+      //   height: 100vh;
+      // }
       height: 20vh;
       position: relative;
       top: calc(-100% - 80px);
@@ -58,12 +61,12 @@
         height: 50vh;
         flex-direction: row;
       }
-      @include from($widescreen) {
-        height: 100vh;
-        flex-direction: column;
-        position: relative;
-        top: 100%;
-      }
+      // @include from($widescreen) {
+      //   height: 100vh;
+      //   flex-direction: column;
+      //   position: relative;
+      //   top: 100%;
+      // }
       .services {
         transition: all 0.4s ease-in-out;
         position: relative;

@@ -1,0 +1,56 @@
+#section5 {
+    background-image: url(https://picsum.photos/1920/1080/?blur);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;  
+    background-image: url(../img/home-shape.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .slide5-content {
+    position: absolute;
+    bottom: 0;
+    height: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    @include mobile() {
+      height: 80%;
+    }
+    .key {
+      @include mobile() {
+        display: none;
+      }
+      width: 60px;
+      position: absolute;
+      left: 50%;
+      top: -12%;
+      transform: translate(-50%, -50%);
+    }
+    .title {
+      display: inline-block;
+      margin-left: 15%;
+    }
+    .testimonies {
+      .title {
+        @include mobile() {
+          display: none;
+        }
+      }
+      margin: 25px 0;
+      .testimony {
+        text-align: center;
+        color: white
+      }
+    }
+    .partners {
+      background-color: white;
+      padding: 15px;
+      box-shadow: 5px 5px 20px black;
+    }
+  }
+}

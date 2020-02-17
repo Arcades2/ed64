@@ -8,6 +8,11 @@ header {
     }
     height: 80px;
     .navbar-brand {
+      @include mobile() {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
       .navbar-item {
         position: absolute;
         &.small {
@@ -34,6 +39,10 @@ header {
     .navbar-menu {
       margin-left: 200px;
       justify-content: center;
+      @include mobile() {
+        width: 100%;
+        margin-left: unset;
+      }
       .navbar-start {
         flex-grow: 1;
         .menu-primary-menu-container {
@@ -42,6 +51,10 @@ header {
           align-items: stretch;
         }
         .menu {
+          @include mobile() {
+            display: flex;
+            flex-direction: column;
+          }
           flex-grow: 1;
           display: flex;
           justify-content: space-around;
@@ -62,6 +75,9 @@ header {
       .navbar-end {
         display: flex;
         align-items: center;
+        @include mobile() {
+          justify-content: center;
+        }
         .socials {
           position: relative;
           margin-right: 10px;

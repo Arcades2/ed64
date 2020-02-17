@@ -1,0 +1,57 @@
+.service-slide {
+  padding-top: 100px;
+  background-image: url('../img/service-check.png');
+  background-position: 75% 25%;
+  background-repeat: no-repeat;
+  background-size: 25%;
+  .service-title {
+    margin-bottom: 50px;
+    display: inline-block;
+  }
+  .square-underline {
+    display: flex;
+    justify-content: center;
+    div {
+      width: 10px;
+      height: 10px;
+      margin: 0 5px;
+      background-color: $red;
+    }
+  }
+  .service-slide-content {
+    @include mobile() {
+      column-count: 1;
+    }
+    column-count: 2;
+    column-gap: 50px;
+    column-rule: solid 3px $red;
+    h3 {
+      font-weight: bold;
+      &:before {
+        content: '';
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        margin-right: 7px;
+        vertical-align: middle;
+        background-color: $red;
+      }
+    }
+    h4 {
+      text-decoration: underline;
+      text-decoration-color: $red;
+    }
+    ul {
+      list-style: none;
+      li:before {
+        content: '';
+        width: 5px;
+        height: 5px;
+        background-color: $red;
+        display: inline-block;
+        margin-right: 5px;
+        vertical-align: middle;
+      }
+    }
+  }
+}
