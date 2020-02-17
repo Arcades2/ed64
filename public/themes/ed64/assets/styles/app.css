@@ -12451,7 +12451,6 @@ header .navbar .navbar-menu .navbar-end .socials a {
 }
 
 #section3 .columns .column.centered {
-  top: 0;
   opacity: 1;
 }
 
@@ -12478,7 +12477,7 @@ header .navbar .navbar-menu .navbar-end .socials a {
 #section3 .columns .col1 {
   height: 20vh;
   position: relative;
-  top: calc(-100% - 80px);
+  left: -100%;
 }
 
 @media screen and (max-width: 766px) {
@@ -12491,6 +12490,10 @@ header .navbar .navbar-menu .navbar-end .socials a {
   #section3 .columns .col1 {
     height: 50vh;
   }
+}
+
+#section3 .columns .col1.centered {
+  left: 0;
 }
 
 #section3 .columns .col1 h2 {
@@ -12508,51 +12511,56 @@ header .navbar .navbar-menu .navbar-end .socials a {
 #section3 .columns .col2 {
   display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  height: 80vh;
+  height: 50vh;
+  position: relative;
 }
 
 @media screen and (min-width: 767px) {
   #section3 .columns .col2 {
-    height: 50vh;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-direction: row;
+    right: -100%;
   }
 }
 
+@media screen and (max-width: 766px) {
+  #section3 .columns .col2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+}
+
+#section3 .columns .col2.centered {
+  right: 0;
+}
+
 #section3 .columns .col2 .services {
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
   position: relative;
-  position: relative;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
   -webkit-box-flex: 1;
           flex-grow: 1;
 }
 
-@media screen and (min-width: 1280px) {
-  #section3 .columns .col2 .services {
-    left: 0 !important;
-    right: 0 !important;
-  }
-}
-
-#section3 .columns .col2 .services.menuiserie {
-  left: -100%;
-}
-
-#section3 .columns .col2 .services.amenagement {
-  left: 100%;
-}
-
-#section3 .columns .col2 .services.centered {
-  left: 0;
-}
-
 #section3 .columns .col2 .services a {
   color: black;
+}
+
+@media screen and (max-width: 766px) {
+  #section3 .columns .col2 .services.menuiserie {
+    left: -100%;
+  }
+
+  #section3 .columns .col2 .services.menuiserie.centered {
+    left: 0;
+  }
+
+  #section3 .columns .col2 .services.amenagement {
+    right: -100%;
+  }
+
+  #section3 .columns .col2 .services.amenagement.centered {
+    right: 0;
+  }
 }
 
 #section3 .columns .col2 .services .square-underline {
