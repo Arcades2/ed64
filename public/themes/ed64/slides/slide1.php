@@ -12,7 +12,7 @@
   </div>
 </div>
 <div class="nav-buttons">
-  <a href="#services" class="nav-button">
+  <a href="#services/1" class="nav-button">
     <img class="border" src="<?php echo get_template_directory_uri() ?>/assets/images/button-border.svg" width="200" height="200" />
     <img class="button-img" src="<?php echo get_template_directory_uri() ?>/assets/images/button-service.png" width="150" height="150" />
   </a>

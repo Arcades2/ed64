@@ -1,6 +1,13 @@
 header {
   width: 100%;
+  .white-nav {
+    background-color: rgba(white, 0.8) !important;
+    .menu li a {
+      color: rgba($red, 0.8) !important;
+    }
+  }
   .navbar {
+    padding: 0;
     transition: all 0.3s ease;
     background-color: rgba(255, 255, 255, 0);
     &.small-navbar {
@@ -8,23 +15,26 @@ header {
     }
     height: 80px;
     .navbar-brand {
-      @include mobile() {
+      position: relative;
+      @include until($desktop) {
         display: flex;
         justify-content: space-between;
         width: 100%;
       }
       .navbar-item {
         position: absolute;
+        padding: 0;
         &.small {
           @include until($tablet) {
             top: unset !important;
             transform: unset !important;
           }
+          padding: 0;
           top: 50%;
           transform: translateY(-50%);
         }
         img {
-          @include until($tablet) {
+          @include until($desktop) {
             width: 50px !important;
             height: 50px !important;
           }
@@ -39,7 +49,7 @@ header {
     .navbar-menu {
       margin-left: 200px;
       justify-content: center;
-      @include mobile() {
+      @include until($desktop) {
         width: 100%;
         margin-left: unset;
       }
@@ -51,7 +61,8 @@ header {
           align-items: stretch;
         }
         .menu {
-          @include mobile() {
+          margin: 0;
+          @include until($desktop) {
             display: flex;
             flex-direction: column;
           }
@@ -75,7 +86,7 @@ header {
       .navbar-end {
         display: flex;
         align-items: center;
-        @include mobile() {
+        @include until($desktop) {
           justify-content: center;
         }
         .socials {

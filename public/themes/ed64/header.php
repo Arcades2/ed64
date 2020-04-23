@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#6d9aea">
 
   <?php wp_head(); ?>
-  <script src="https://kit.fontawesome.com/34d33b476f.js"></script>
+  <script src="https://kit.fontawesome.com/34d33b476f.js" crossorigin="anonymous"></script>
 </head>
 <body <?php body_class(); ?>>
 

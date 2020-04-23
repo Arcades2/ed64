@@ -30,7 +30,7 @@
           <i class="fas fa-inverse fa-2x fa-chevron-right"></i>
         </span>
       </div>
-      <div class="container">
+      <div class="lightbox-content-container">
         <img class="lightbox-image" src="" alt="Réalisation image" />
         <div class="lightbox-content">
           <h3 class="lightbox-title"></h3>

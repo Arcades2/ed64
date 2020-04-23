@@ -1,16 +1,21 @@
 #section3 {
   .fp-next {
-    right: 50px;
+    @include from($tablet) {
+      right: 50px;
+    }
+    border-color: transparent transparent transparent rgba($red, 0.8);
   }
-  .columns {
-    flex-direction: column;
+  .fp-prev {
+    border-color: transparent rgba($red, 0.8) transparent transparent;
+  }
+  .services-slide {
+    overflow: hidden;
     margin: 0;
-    .column {
+    .sliding {
       padding: 0;
       transition: all 0.5s ease;
       opacity: 0;
       &.centered {
-        // left: 0;
         opacity: 1;
       }
     }
@@ -28,7 +33,7 @@
         background-color: white;
       }
     }
-    .col1 {
+    .slide-top {
       @include until($tablet) {
         background-image: unset !important;
       }
@@ -51,7 +56,7 @@
         // color: white;
       }
     }
-    .col2 {
+    .slide-bottom {
       display: flex;
       height: 50vh;
       position: relative;
