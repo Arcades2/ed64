@@ -22,16 +22,12 @@ header {
         width: 100%;
       }
       .navbar-item {
-        position: absolute;
         padding: 0;
         &.small {
           @include until($tablet) {
             top: unset !important;
             transform: unset !important;
           }
-          padding: 0;
-          top: 50%;
-          transform: translateY(-50%);
         }
         img {
           @include until($desktop) {

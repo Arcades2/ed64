@@ -22423,7 +22423,7 @@ var iFullPage = new fullpage_js__WEBPACK_IMPORTED_MODULE_2___default.a("#fullpag
   responsiveWidth: 768,
   dragAndTest: false,
   css3: false,
-  normalScrollElements: ".masonry-wrapper, .lightbox, .lightbox-container",
+  normalScrollElements: ".masonry-wrapper, .lightbox, .lightbox-container, .slide2-content",
   // paddingTop: '80px',
   onLeave: function onLeave(origin, destination, direction) {
     if (origin.index === 0) {

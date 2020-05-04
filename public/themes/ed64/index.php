@@ -45,13 +45,6 @@
     >
     <?php include 'slides/slide6.php' ?>
     </div>
-    <div
-      id="section7"
-      data-anchor="footer"
-      class="section fp-auto-height"
-    >
-    <?php include 'slides/slide7.php' ?>
-    </div>
   </div>
 </main>
 

@@ -10,13 +10,13 @@
     height: 100%;  
     background-image: url(../img/home-shape.png);
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
   }
   .slide5-content {
     position: absolute;
     bottom: 0;
-    height: 60%;
+    height: 70%;
     left: 50%;
     transform: translateX(-50%);
     @include mobile() {
@@ -29,12 +29,13 @@
       width: 60px;
       position: absolute;
       left: 50%;
-      top: -12%;
+      top: -5%;
       transform: translate(-50%, -50%);
     }
     .title {
       display: inline-block;
       margin-left: 15%;
+      margin-bottom: 50px;
     }
     .testimonies {
       .title {
@@ -45,10 +46,19 @@
       margin: 25px 0;
       .testimony {
         text-align: center;
-        color: white
+        color: white;
+        @include from ($tablet) {
+          font-size: 1.5rem;
+        }
       }
     }
     .partners {
+      @include mobile() {
+        h2 {
+          font-size: 1.2rem;
+        }
+      }
+      margin-top: 50px;
       background-color: white;
       padding: 15px;
       box-shadow: 5px 5px 20px black;

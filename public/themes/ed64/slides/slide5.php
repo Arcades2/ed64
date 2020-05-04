@@ -25,7 +25,7 @@
     </div>
     <div class="partners">
       <div class="title">
-        <h2>Partenaires</h2>
+        <h2>Ils nous font confiance</h2>
         <div class="underline"></div>
       </div>
       <div class="partners-list">

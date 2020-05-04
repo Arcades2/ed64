@@ -8,7 +8,7 @@
     margin-top: 25px;
     label {
       background-color: white;
-      padding: 15px;
+      padding: 5px;
       width: 100%;
       box-shadow: 5px 5px 25px darkgrey;
       input, textarea {
@@ -24,91 +24,6 @@
         padding: 10px 15px;
         border-style: none;
       }
-    }
-  }
-}
-footer {
-  position: relative;
-  background-image: url('../img/footer-background.png');
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  padding: 50px 15%;
-  .footer-illustration {
-    background-image: url('../img/footer-illustration.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding-top: 22.6%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 80%;
-  }
-  .footer-top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @include desktop() {
-      justify-content: space-between;
-      align-items: flex-end;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-    .logo {
-      border-radius: 50%;
-      @include mobile() {
-        width: 150px;
-        height: 150px;
-      }
-    }
-    .social-links {
-      margin-top: 25px;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      a {
-        margin: 0 5px;
-        @include mobile() {
-          margin: 10px 5px;
-        }
-      }
-      .website {
-        color: white;
-      }
-    }
-  }
-  .footer-separator {
-    height: 4px;
-    background-color: white;
-    width: 100%;
-    margin: 50px 0;
-  }
-  .footer-down {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 100px;
-    flex-wrap: wrap;
-    @include mobile() {
-      justify-content: space-around;
-    }
-    div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-    img {
-      border-radius: 50%;
-      width: 75px;
-      height: 75px;
-      margin-bottom: 25px;
-    }
-    p {
-      color: white;
-      text-align: center;
     }
   }
 }

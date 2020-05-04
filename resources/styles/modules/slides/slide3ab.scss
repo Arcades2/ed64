@@ -27,6 +27,7 @@
     column-rule: solid 3px $red;
     h3 {
       font-weight: bold;
+      margin-bottom: 50px;
       &:before {
         content: '';
         width: 15px;
@@ -40,6 +41,7 @@
     h4 {
       text-decoration: underline;
       text-decoration-color: $red;
+      margin-bottom: 50px;
     }
     ul {
       list-style: none;

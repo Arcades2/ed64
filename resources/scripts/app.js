@@ -57,7 +57,8 @@ const iFullPage = new fullpage("#fullpage", {
   responsiveWidth: 768,
   dragAndTest: false,
   css3: false,
-  normalScrollElements: ".masonry-wrapper, .lightbox, .lightbox-container",
+  normalScrollElements:
+    ".masonry-wrapper, .lightbox, .lightbox-container, .slide2-content",
   // paddingTop: '80px',
   onLeave: (origin, destination, direction) => {
     if (origin.index === 0) {
