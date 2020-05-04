@@ -6,9 +6,9 @@
       <div class="underline"></div>
     </div>
     <?php the_field('contact_text', 84); ?>
-  <?php
-    echo do_shortcode(get_field('form_shortcode', 84));
-  ?>
+    <?php
+      echo do_shortcode(get_field('form_shortcode', 84));
+    ?>
   </div>
 </div>
 <footer>
