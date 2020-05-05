@@ -15,7 +15,7 @@
         <div class="container is-fluid">
           <div class="navbar-brand">
             <a class="navbar-item" href="/">
-              <img src="https://picsum.photos/200/200" alt="ED64 Logo" />
+              <img src="<?php echo get_template_directory_uri() ?>/assets/images/ed64_logo.png" width="200" height="200" alt="Ed Menuiserie 64 Logo" />
             </a>
 
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar">
@@ -32,15 +32,15 @@
             </div>
             <div class="navbar-end">
               <div class="socials">
-                <a href="#"></a>
+                <a href="https://www.facebook.com/edmenuiserie64/" target="_blank" rel="noopener noreferrer"></a>
                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/facebook.png" width="40" height="40" />
               </div>
               <div class="socials">
-                <a href="#"></a>
+                <a href="https://www.instagram.com/edmenuiserie/?hl=fr" target="_blank" rel="noopener noreferrer"></a>
                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/instagram.png" width="40" height="40" />
               </div>
               <div class="socials">
-                <a href="#"></a>
+                <a href="https://www.linkedin.com/company/ed-menuiserie-64/about/" target="_blank" rel="noopener noreferrer"></a>
                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/linkedin.png" width="40" height="40" />
               </div>
             </div>

@@ -38,6 +38,11 @@ footer {
       width: 50px;
       height: 50px;
     }
+    .company-name {
+      color: white;
+      vertical-align: bottom;
+      font-size: 1.8rem;
+    }
     .social-links {
       display: flex;
       flex-wrap: wrap;
@@ -84,6 +89,25 @@ footer {
     p {
       color: white;
       text-align: center;
+    }
+  }
+  .menu-footer-container {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    #menu-footer {
+      display: flex;
+      li {
+        a {
+          color: white;
+        }
+        padding: 0 15px;
+        border-right: 2px solid white;
+        &:last-child {
+          padding-right: 0;
+          border-right: none;
+        }
+      }
     }
   }
 }

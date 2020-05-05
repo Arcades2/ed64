@@ -1,0 +1,9 @@
+.legal-notice-container {
+  margin-top: 100px; 
+  @include from($widescreen) {
+    margin-top: 210px;
+  }
+  h1 {
+    text-align: center;
+  }
+}

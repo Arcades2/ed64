@@ -8,14 +8,21 @@
   <?php if (have_rows('projects', 44)) : ?>
   <div class="masonry-wrapper">
     <div class="masonry">
-    <?php $i = 0;
-    while (have_rows('projects', 44)) : the_row(); $size = 'medium_large'; ?>
+    <?php
+      $i = 0;
+      $projects = array_reverse(get_field('projects', 44));
+
+      foreach ($projects as $p) :
+    ?>
       <div class="masonry-item" data-index="<?php echo $i ?>">
-        <img class="masonry-content" src="<?php echo get_sub_field('image')['sizes'][$size] ?>" alt="galerie" />
-        <div class="project-title"><?php the_sub_field('title') ?></div>
-        <div class="project-description"><?php the_sub_field('description') ?></div>
+        <img class="masonry-content" src="<?php echo $p['image']['sizes']['medium_large'] ?>" alt="galerie" />
+        <div class="project-title"><?php echo $p['title'] ?></div>
+        <div class="project-description"><?php echo $p['description'] ?></div>
       </div>
-    <?php $i++; endwhile; ?>
+    <?php
+      $i++;
+      endforeach;
+    ?>
     </div>
   </div>
   <div id="lightbox-container" class="lightbox-container">

@@ -1,6 +1,6 @@
 <div class="company">
   <div class="name">
-    <img src="https://picsum.photos/100/100" alt="ED64 Logo" width="100" height="100" />
+    <img src="<?php echo get_template_directory_uri() ?>/assets/images/ed64_logo.png" width="100" height="100" alt="Ed Menuiserie 64 Logo" />
     <h1>ED MENUISERIE 64</h1>
   </div>
   <div class="slogan">

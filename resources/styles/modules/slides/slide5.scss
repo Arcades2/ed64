@@ -1,5 +1,4 @@
 #section5 {
-    background-image: url(https://picsum.photos/1920/1080/?blur);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -9,9 +8,12 @@
     width: 100%;
     height: 100%;  
     background-image: url(../img/home-shape.png);
-    background-size: cover;
+    background-size: 100% 110%;
     background-position: bottom;
     background-repeat: no-repeat;
+    @include mobile() {
+      background-size: cover;
+    }
   }
   .slide5-content {
     position: absolute;
@@ -47,6 +49,7 @@
       .testimony {
         text-align: center;
         color: white;
+        font-style: italic;
         @include from ($tablet) {
           font-size: 1.5rem;
         }

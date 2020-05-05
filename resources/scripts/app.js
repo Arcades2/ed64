@@ -61,14 +61,14 @@ const iFullPage = new fullpage("#fullpage", {
     ".masonry-wrapper, .lightbox, .lightbox-container, .slide2-content",
   // paddingTop: '80px',
   onLeave: (origin, destination, direction) => {
-    if (origin.index === 0) {
-      const nav = document.querySelector("nav");
-      nav.classList.add("white-nav");
-    }
-    if (destination.index === 0) {
-      const nav = document.querySelector("nav");
-      nav.classList.remove("white-nav");
-    }
+    // if (origin.index === 0) {
+    //   const nav = document.querySelector("nav");
+    //   nav.classList.add("white-nav");
+    // }
+    // if (destination.index === 0) {
+    //   const nav = document.querySelector("nav");
+    //   nav.classList.remove("white-nav");
+    // }
     if (origin.index === 0 || destination.index === 0) {
       const logo = document.querySelector(".navbar-brand img");
       const link = document.querySelector(".navbar-brand a");

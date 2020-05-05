@@ -28,6 +28,7 @@
       id="section4"
       data-anchor="realisations"
       class="section"
+      style="background-image: url(<?php echo get_field('background', '44')['sizes']['large'] ?>)"
     >
       <?php include 'slides/slide4.php' ?>
     </div>
@@ -35,6 +36,7 @@
       id="section5"
       data-anchor="testimonials"
       class="section"
+      style="background-image: url(<?php echo get_field('background', '62')['sizes']['large'] ?>)"
     >
     <?php include 'slides/slide5.php' ?>
     </div>

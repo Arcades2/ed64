@@ -1,4 +1,5 @@
-<div class="fpslide auto-height">
+<!-- <div class="fpslide auto-height"> -->
+<div class="fpslide">
   <?php include 'slide3a.php' ?>
 </div>
 <!-- <div class="columns full-height fpslide active"> -->

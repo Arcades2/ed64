@@ -22426,17 +22426,14 @@ var iFullPage = new fullpage_js__WEBPACK_IMPORTED_MODULE_2___default.a("#fullpag
   normalScrollElements: ".masonry-wrapper, .lightbox, .lightbox-container, .slide2-content",
   // paddingTop: '80px',
   onLeave: function onLeave(origin, destination, direction) {
-    if (origin.index === 0) {
-      var nav = document.querySelector("nav");
-      nav.classList.add("white-nav");
-    }
-
-    if (destination.index === 0) {
-      var _nav = document.querySelector("nav");
-
-      _nav.classList.remove("white-nav");
-    }
-
+    // if (origin.index === 0) {
+    //   const nav = document.querySelector("nav");
+    //   nav.classList.add("white-nav");
+    // }
+    // if (destination.index === 0) {
+    //   const nav = document.querySelector("nav");
+    //   nav.classList.remove("white-nav");
+    // }
     if (origin.index === 0 || destination.index === 0) {
       var logo = document.querySelector(".navbar-brand img");
       var link = document.querySelector(".navbar-brand a");

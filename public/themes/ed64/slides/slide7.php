@@ -1,7 +1,7 @@
   <footer>
     <div class="footer-illustration"></div>
     <div class="footer-top">
-      <img class="logo" src="https://picsum.photos/200/200" />
+      <img src="https://picsum.photos/100/100" alt="ED64 Logo" width="100" height="100" />
       <div class="social-links">
         <a href="#"><img width="50" height="50" src="<?php echo get_template_directory_uri() ?>/assets/images/facebook.png" alt="facebook"/></a>
         <a href="#"><img width="50" height="50" src="<?php echo get_template_directory_uri() ?>/assets/images/instagram.png" alt="instagram"/></a>

@@ -15,7 +15,10 @@
   <div class="footer-illustration"></div>
   <div class="footer-content">
     <div class="footer-top">
-      <img class="logo" src="https://picsum.photos/200/200" />ED MENUISERIE 64
+      <div>
+      <img src="<?php echo get_template_directory_uri() ?>/assets/images/ed64_logo.png" width="50" height="50" alt="Ed Menuiserie 64 Logo" />
+      <span class="company-name">ED MENUISERIE 64</span>
+      </div>
       <div class="social-links">
         <a href="https://www.facebook.com/edmenuiserie64/" target="_blank" rel="noopener noreferrer"><img width="50" height="50" src="<?php echo get_template_directory_uri() ?>/assets/images/facebook.png" alt="facebook"/></a>
         <a href="https://www.instagram.com/edmenuiserie/?hl=fr" target="_blank" rel="noopener noreferrer"><img width="50" height="50" src="<?php echo get_template_directory_uri() ?>/assets/images/instagram.png" alt="instagram"/></a>
@@ -31,7 +34,7 @@
       </div>
       <div>
         <img src="<?php echo get_template_directory_uri() ?>/assets/images/email-logo.png" />
-        <p>Email</p>
+        <p>edmenuiserie64@outlook.fr</p>
       </div>
       <div>
         <img src="<?php echo get_template_directory_uri() ?>/assets/images/position-logo.png" />
@@ -39,4 +42,7 @@
       </div>
     </div>
   </div>
+  <?php wp_nav_menu([
+    'theme_location' => 'footer',
+    ]); ?>
 </footer>

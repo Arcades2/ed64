@@ -30,6 +30,7 @@ add_action('after_setup_theme', function () {
     // Register navigation menus.
     register_nav_menus([
         'navigation' => __('Navigation', 'wordplate'),
+        'footer' => __('Footer', 'wordplate')
     ]);
 });
 

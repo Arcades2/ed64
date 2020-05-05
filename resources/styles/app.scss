@@ -1,6 +1,8 @@
 /* WordPlate */
+@import '../fonts/stylesheet.css';
 @import 'reset';
 @import '../../node_modules/bulma/sass/utilities/initial-variables.sass';
 @import '../../node_modules/bulma/bulma.sass';
 @import 'variables';
+@import 'legal-notice';
 @import 'modules/index';
