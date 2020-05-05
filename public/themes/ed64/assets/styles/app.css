@@ -11998,6 +11998,10 @@ label.panel-block:hover {
   text-align: center;
 }
 
+.page-template-legal-notice .legal-notice-container h2 {
+  font-family: blissful_thinkingregular;
+}
+
 * {
   font-family: "blissful_thinkingregular";
 }
