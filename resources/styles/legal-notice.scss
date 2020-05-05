@@ -1,9 +1,13 @@
-.legal-notice-container {
-  margin-top: 100px; 
-  @include from($widescreen) {
-    margin-top: 210px;
+.page-template-legal-notice {
+  header {
+    height: 100px;
+    a {
+      line-height: 100px;
+    }
   }
-  h1 {
-    text-align: center;
+  .legal-notice-container {
+    h1 {
+      text-align: center;
+    }
   }
 }

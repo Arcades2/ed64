@@ -11986,17 +11986,15 @@ label.panel-block:hover {
   padding: 3rem 1.5rem 6rem;
 }
 
-.legal-notice-container {
-  margin-top: 100px;
+.page-template-legal-notice header {
+  height: 100px;
 }
 
-@media screen and (min-width: 1280px) {
-  .legal-notice-container {
-    margin-top: 210px;
-  }
+.page-template-legal-notice header a {
+  line-height: 100px;
 }
 
-.legal-notice-container h1 {
+.page-template-legal-notice .legal-notice-container h1 {
   text-align: center;
 }
 

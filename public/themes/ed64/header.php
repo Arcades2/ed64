@@ -9,7 +9,7 @@
   <script src="https://kit.fontawesome.com/34d33b476f.js" crossorigin="anonymous"></script>
 </head>
 <body <?php body_class(); ?>>
-
+  <?php if (is_front_page()) : ?>
     <header>
       <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="container is-fluid">
@@ -48,3 +48,10 @@
         </div>
       </nav>
     </header>
+  <?php else : ?>
+    <header>
+      <div class="container">
+        <a href="/">Retourner au site</a>
+      </div>
+    </header>
+  <?php endif; ?>
