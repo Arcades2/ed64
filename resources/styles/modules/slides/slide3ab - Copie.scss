@@ -1,13 +1,9 @@
-.fp-slide {
-  height: 100vh !important;
-}
 .service-slide {
-  margin-top: 100px;
+  padding-top: 100px;
   background-image: url('../img/service-check.png');
   background-position: 75% 25%;
   background-repeat: no-repeat;
   background-size: 25%;
-  height: calc(100% - 150px) !important;
   .service-title {
     margin-bottom: 50px;
     display: inline-block;
@@ -21,12 +17,6 @@
       margin: 0 5px;
       background-color: $red;
     }
-  }
-  .service-overflow {
-    overflow-y: auto;
-    height: calc(100% - 150px);
-    padding-bottom: 50px;
-    @include scrollbar;
   }
   .service-slide-content {
     @include mobile() {

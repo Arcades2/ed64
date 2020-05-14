@@ -30,6 +30,21 @@
       </div>
     </div>
     <div
+      style="background-image: url('<?php echo get_field('image_van', 28)['sizes']['medium_large'] ?>')"
+      class="services menuiserie image-background">
+      <div class="overlay white"></div>
+      <div class="service-title">
+        <h2>
+          <a href="#services/3">Aménagement Van/Combi</a>
+        </h2>
+        <div class="square-underline">
+         <div class="square"></div> 
+         <div class="square"></div> 
+         <div class="square"></div> 
+        </div>
+      </div>
+    </div>
+    <div
       style="background-image: url('<?php echo get_field('image_amenagement', 28)['sizes']['medium_large'] ?>')"
       class="services amenagement image-background">
       <div class="overlay white"></div>
@@ -48,4 +63,7 @@
 </div>
 <div class="fpslide auto-height">
   <?php include 'slide3b.php'; ?>
+</div>
+<div class="fpslide auto-height">
+  <?php include 'slide3c.php'; ?>
 </div>

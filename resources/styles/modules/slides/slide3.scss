@@ -73,6 +73,9 @@
         position: relative;
         transition: all .4s ease;
         flex-grow: 1;
+        h2 {
+          text-align: center;
+        }
         a {
           color: black;
         }

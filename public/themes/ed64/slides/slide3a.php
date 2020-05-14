@@ -7,7 +7,9 @@
       <div></div>
     </div>
   </div>
-  <div class="service-slide-content">
-    <?php echo get_post_field('post_content', 86) ?>
+  <div class="service-overflow">
+    <div class="service-slide-content">
+      <?php echo get_post_field('post_content', 86) ?>
+    </div>
   </div>
 </div>
