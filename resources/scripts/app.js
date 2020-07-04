@@ -134,6 +134,18 @@ const iFullPage = new fullpage("#fullpage", {
   }
 });
 
+iFullPage.setAllowScrolling(false, "right, left");
+
+const next = document.querySelector(".fp-next");
+next.addEventListener("click", () => {
+  iFullPage.moveSlideRight();
+});
+
+const prev = document.querySelector(".fp-prev");
+prev.addEventListener("click", () => {
+  iFullPage.moveSlideLeft();
+});
+
 // Parallax
 
 const scene = document.getElementById("scene");

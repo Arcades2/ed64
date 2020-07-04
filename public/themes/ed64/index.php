@@ -13,7 +13,7 @@
     <div
       id="section2"
       data-anchor="presentation"
-      class="section"
+      class="section fp-auto-height-responsive"
     >
       <?php include 'slides/slide2.php' ?>
     </div>
